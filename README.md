@@ -1,0 +1,2 @@
+# Manifest
+Spelling the Ethereal
