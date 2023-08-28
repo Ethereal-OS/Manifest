@@ -1,3 +1,9 @@
+ETHEREAL-OS Version 1.0
+
+<p align="center">
+<img src="https://github.com/Ethereal-OS/Manifest/blob/A13/assists/ETHEREAL-OS.png" > 
+</p>
+
 How to Build?
 -------------
 ### Getting the source
