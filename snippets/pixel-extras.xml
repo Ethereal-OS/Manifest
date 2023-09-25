@@ -14,12 +14,8 @@
   <project path="external/piex" name="external_piex" remote="ethereal" />
   <project path="external/fastrpc" name="external_fastrpc" remote="ethereal" />
 
-  <!-- GameSpace Chaldeaprjkt -->
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ethereal" />
-
   <!-- General repos -->
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ethereal" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="ethereal" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="ethereal" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ethereal" />
@@ -33,7 +29,6 @@
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ethereal" />
   
   <!-- Packages repos -->
-  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ethereal" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/RepainterService" name="packages_apps_RepainterService" remote="pixel-plus" />
@@ -41,7 +36,6 @@
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ethereal" />
   <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="pixel-plus" />
-  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
   
   <!-- Official Devices - OTA Script Generation -->
   <project path="vendor/officialdevices" name="official_devices" remote="ethereal-devices" />
