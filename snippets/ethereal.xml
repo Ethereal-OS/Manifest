@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-13.1" />
+
+  <remote  name="arrow-gitlab"
+           fetch="https://gitlab.com/arrowos-project"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-13.1" />
+  
+  <remote  name="ethereal"
+           fetch="https://gitlab.com/Ethereal-OS"
+           revision="refs/heads/A13" />
+
+  <remote name="lineage"
+        fetch="https://github.com/LineageOS"
+        revision="lineage-20.0" />
+        
+  <remote name="g-gitlab"
+        fetch="https://gitlab.com/GhosutoX"
+        revision="refs/heads/pyro" />
+
+  <project path="manifest" name="manifest" remote="ethereal" revision="A13" />
+  <project path="build/make" name="build_make" remote="ethereal" revision="A13" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="ethereal" revision="A13" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="ethereal" revision="A13" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="ethereal" revision="A13" />
+  
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ethereal" revision="A13" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="ethereal" revision="A13" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="ethereal" revision="A13"/>
+  <project path="frameworks/libs/systemui" name="rameworks_libs_systemui" remote="ethereal" revision="A13" />
+
+  <!-- Device -->
+  <project path="device/ethereal/sepolicy" name="device_ethereal_sepolicy" remote="ethereal" revision="A13" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ethereal" revision="A13" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ethereal" revision="A13" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A13" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="ethereal" revision="A13" />
+
+  <!-- Hardware -->
+  <project path="hardware/ethereal/interfaces" name="hardware_ethereal_interfaces" remote="ethereal;" revision="A13" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="ethereal" revision="A13" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture"  remote="ethereal" revision="A13" />
+  <project path="packages/apps/EtherealHub" name="packages_apps_EtherealHub" remote="ethereal" revision="A13" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ethereal" revision="A13" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ethereal" revision="A13" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="ethereal" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ethereal" revision="A13" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ethereal" revision="A13" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="ethereal" revision="A13" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ethereal" revision="A13"/>
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ethereal" revision="A13"/>
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ethereal" revision="A13"/>
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ethereal" revision="A13"/>
+
+  <!-- Vendor -->
+  <project path="vendor/ethereal" name="vendor_ethereal" remote="ethereal" revision="A13" />
+
+  <!-- System -->
+  <project path="system/sepolicy" name="system_sepolicy" remote="ethereal" revision="A13" />
+
+</manifest>
