@@ -1197,5 +1197,16 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <!-- END open-source projects -->
+	
+  <!-- Remove unused AOSP repos -->
+  <include name="snippets/remove.xml" />
 
+  <!-- Add all PixelExperience repos -->
+  <include name="snippets/pixel.xml" />
+  <include name="snippets/pixel-extras.xml" />
+  <include name="snippets/pixel-caf.xml" />
+	
+  <!-- Ethereal Stuff -->		
+  <include name="snippets/ethereal.xml"/>	
+	
 </manifest>
