@@ -57,7 +57,7 @@
   <!-- Kernel Tools -->
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.85" />
 
-  <!-- Prebuilts repos - Snapdragon LLVM Clang -->
+  <!-- Prebuilts repos - LLVM Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="snapdragon-clang" remote="IamCOD3X" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" clone-depth="1" remote="kdrag0n" />
 
