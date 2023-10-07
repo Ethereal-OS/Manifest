@@ -36,7 +36,7 @@ To initialize your local repository using the EthrealOS trees, use a
 command like this:
 
 ```bash
-  repo init -u https://github.com/Ethreal-OS/platform_manifest -b A13
+  repo init -u https://github.com/Ethereal-OS/Manifest -b A13
 ```
   
 Then to sync up:
