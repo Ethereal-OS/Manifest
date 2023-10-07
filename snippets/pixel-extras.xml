@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  <remote name="kdrag0n"
+			fetch="https://github.com/kdrag0n/"
+			revision="master" />
+	<remote name="ThankYouMario"
+			fetch="https://github.com/IamCOD3X/"
+			revision="main" />
+  
   <!-- External repos -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
   <project path="external/bson" name="external_bson" remote="pixel" />
@@ -52,7 +58,8 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.85" />
 
   <!-- Prebuilts repos - Snapdragon LLVM Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="snapdragon-clang" remote="void-gitlab" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-sdclang" name="snapdragon-clang" remote="IamCOD3X" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" clone-depth="1" remote="kdrag0n" />
 
   <!-- System Repos -->
   <project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="pixel" />
