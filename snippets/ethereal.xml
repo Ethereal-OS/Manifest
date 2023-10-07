@@ -16,10 +16,6 @@
            fetch="https://gitlab.com/arrowos-project"
            review="https://review.arrowos.net/"
            revision="refs/heads/arrow-13.1" />
-  
-  <remote  name="ethereal"
-           fetch="https://gitlab.com/Ethereal-OS"
-           revision="refs/heads/A13" />
 
   <remote name="lineage"
         fetch="https://github.com/LineageOS"
