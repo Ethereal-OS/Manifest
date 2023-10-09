@@ -44,7 +44,7 @@
   <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="pixel-plus" />
   
   <!-- Official Devices - OTA Script Generation -->
-  <project path="vendor/officialdevices" name="official_devices" remote="ethereal-devices" />
+  <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal" />
 
   <!-- Prebuilts repos -->
   <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="pixel" clone-depth="1" />
