@@ -4,8 +4,8 @@
 			fetch="https://github.com/kdrag0n/"
 			revision="master" />
   <remote name="IamCOD3X"
-			fetch="https://github.com/IamCOD3X/"
-			revision="main" />
+			fetch="https://gitlab.com/IamCOD3X/"
+			revision="aosp-13" />
   
   <!-- External repos -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
