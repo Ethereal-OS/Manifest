@@ -30,7 +30,6 @@
   <project path="packages/apps/Aperture" name="packages_apps_Aperture"  remote="ethereal" revision="A13" />
   <project path="packages/apps/EtherealHub" name="packages_apps_EtherealHub" remote="ethereal" revision="A13" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ethereal" revision="A13" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="ethereal" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="ethereal" revision="A13" />
 
   <!-- Vendor -->
