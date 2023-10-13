@@ -72,6 +72,7 @@
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
   <remove-project name="device/mediatek/wembley-sepolicy" />
+  <remove-project name="platform/external/fastrpc" />
   <remove-project name="device/sample" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
@@ -210,6 +211,7 @@
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/netd" />
+  <remove-project name="tools/platform-compat" />
   <remove-project name="platform/system/nfc" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
