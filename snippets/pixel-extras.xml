@@ -78,7 +78,6 @@
 
   <!-- Xiaomi TouchService (Mondrian) -->
   <project path="packages/apps/TouchService" name="packages_apps_TouchService" remote="voidui" />
-</manifest>
   <project path="tools/platform-compat" name="tools_platform-compat" remote="ethereal" />
   
 </manifest>
