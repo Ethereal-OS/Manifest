@@ -70,9 +70,6 @@
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
 
-  <!-- Hardware Xiaomi -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="voidui" />
-
   <!-- Xiaomi TouchService (Mondrian) -->
   <project path="packages/apps/TouchService" name="packages_apps_TouchService" remote="voidui" />
   <project path="tools/platform-compat" name="tools_platform-compat" remote="ethereal" />
