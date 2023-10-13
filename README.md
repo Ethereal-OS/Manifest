@@ -49,7 +49,7 @@ Finally to build:
 -----------------
 
 ```bash
-  First You need to add the following lines in your Device Tree's ethreal_devicename.mk file
+  First You need to add the following lines in your Device Tree ethreal_devicename.mk file
 
   TARGET_BOOT_ANIMATION_RES := 1080 : Please change as per your device resolution
 
