@@ -70,9 +70,6 @@
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
 
-  <!-- External repos (VoidUI) -->
-  <project path="external/piex" name="external_piex" remote="voidui" />
-
   <!-- Hardware Xiaomi -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="voidui" />
 
