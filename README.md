@@ -43,7 +43,7 @@ Then to sync up:
 ----------------
 
 ```bash
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 Finally to build:
 -----------------
@@ -57,7 +57,7 @@ Finally to build:
 
 for all the EthrealOS Stuff:  $(call inherit-product, vendor/ethreal/config/common_full_phone.mk)
 
-for maintainer:  ETHEREAL_BUILD_MAINTAINER := RakeshBatra
+for maintainer:  ETHEREAL_BUILD_MAINTAINER := IamCOD3X
 
 for Gapps Build: WITH_GAPPS := true
  
