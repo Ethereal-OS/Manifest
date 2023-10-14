@@ -19,24 +19,16 @@
   <project path="external/ntfs-3g" name="external_ntfs-3g" remote="pixel" />
   <project path="external/tinyxml" name="external_tinyxml" remote="pixel" />
 
-  <!-- External repos (Ethereal) -->
-  <project path="external/piex" name="external_piex" remote="ethereal" />
-  <project path="external/fastrpc" name="external_fastrpc" remote="ethereal" />
-
   <!-- General repos -->
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ethereal" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="ethereal" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ethereal" />
 
   <!-- Hardware repos -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="pixel" />
   <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="pixel-plus" />
-  
-  <!-- Hardware Xiaomi -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ethereal" />
-  
   <!-- Packages repos -->
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
@@ -69,9 +61,9 @@
 
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
-
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ethereal" />
+  
   <!-- Xiaomi TouchService (Mondrian) -->
   <project path="packages/apps/TouchService" name="packages_apps_TouchService" remote="voidui" />
-  <project path="tools/platform-compat" name="tools_platform-compat" remote="ethereal" />
-  
 </manifest>
