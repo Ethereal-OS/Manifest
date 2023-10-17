@@ -40,13 +40,13 @@
   
   <!-- Packages repos -->
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ethereal" />
+  <project path="packages/apps/EtherealHub" name="packages_apps_EtherealHub" remote="ethereal" revision="A13" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/RepainterService" name="packages_apps_RepainterService" remote="pixel-plus" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="pixel" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ethereal" />
-  <project path="packages/apps/EtherealHub" name="packages_apps_EtherealHub" remote="ethereal" revision="A13" />
   <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="pixel-plus" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
   
