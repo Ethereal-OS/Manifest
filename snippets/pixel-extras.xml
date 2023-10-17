@@ -6,10 +6,7 @@
   <remote name="IamCOD3X"
 			fetch="https://gitlab.com/IamCOD3X/"
 			revision="aosp-13" />
-    <remote name="voidui"
-                        fetch="https://github.com/VoidUI-Andromeda"
-                        revision="aosp-13"/>
-  
+
   <!-- External repos -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
   <project path="external/bson" name="external_bson" remote="pixel" />
@@ -18,29 +15,40 @@
   <project path="external/json-c" name="external_json-c" remote="pixel" />
   <project path="external/ntfs-3g" name="external_ntfs-3g" remote="pixel" />
   <project path="external/tinyxml" name="external_tinyxml" remote="pixel" />
-  
+
   <!-- External repos (Ethereal) -->
   <project path="external/piex" name="external_piex" remote="ethereal" />
   <project path="external/fastrpc" name="external_fastrpc" remote="ethereal" />
+
+  <!-- GameSpace Chaldeaprjkt -->
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ethereal" />
 	
   <!-- General repos -->
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ethereal" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="ethereal" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="ethereal" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ethereal" />
 
   <!-- Hardware repos -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="pixel" />
   <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="pixel-plus" />
+  
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ethereal" />
+  
   <!-- Packages repos -->
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ethereal" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/RepainterService" name="packages_apps_RepainterService" remote="pixel-plus" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="pixel" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ethereal" />
+  <project path="packages/apps/EtherealHub" name="packages_apps_EtherealHub" remote="ethereal" revision="A13" />
   <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="pixel-plus" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
   
   <!-- Official Devices - OTA Script Generation -->
   <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal" />
@@ -65,9 +73,6 @@
 
   <!-- Tools Repos -->
   <project path="tools/extract-utils" name="tools_extract-utils" remote="pixel" />
-  <!-- Hardware Xiaomi -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ethereal" />
+  <project path="tools/platform-compat" name="tools_platform-compat" remote="ethereal" />
   
-  <!-- Xiaomi TouchService (Mondrian) -->
-  <project path="packages/apps/TouchService" name="packages_apps_TouchService" remote="voidui" />
 </manifest>
