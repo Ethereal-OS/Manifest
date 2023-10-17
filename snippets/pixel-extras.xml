@@ -25,7 +25,7 @@
 	
   <!-- General repos -->
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ethereal" />
-  <project path="vendor/ethereal" name="vendor_ethreal" remote="ethereal" />
+  <project path="vendor/ethereal" name="vendor_ethereal" remote="ethereal" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="ethereal" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ethereal" />
