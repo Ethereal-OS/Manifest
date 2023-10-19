@@ -1,5 +1,3 @@
-ETHEREAL-OS Version 1.0
-
 <p align="center">
 <img src="https://github.com/Ethereal-OS/Manifest/blob/A13/assists/ETHEREAL-OS.png" > 
 </p>
@@ -7,13 +5,6 @@ ETHEREAL-OS Version 1.0
 How to Build?
 -------------
 ### Getting the source
-- Making required directories
-- Obtaining the repo binary
-- Adding repo binary to your path
-- Giving the repo binary proper permissions
-- Initializing an empty repo
-- Syncing the repo
-
 Alright, so now we’re getting there. I have outlined the basics of what we’re about to do and broke them down as I know them. This is all pretty much going to be copy/paste so it’ll be fairly difficult to screw this up :)
 
 ##### Make directory for the repo binary
@@ -71,7 +62,8 @@ and use the following to build:
 Help from other devices for making them Official
 ------------------------------------------------
 
-If you got some commits missing in our sources for your device, let us know on our telegram chat. Everything else, it's up to you at the time of building.
+If you got some commits missing in our sources for your device, let us know on our Telegram [ETHEREAL-OS](https://www.t.me/ETHEREAL_OS) </br>
+Everything else, it's up to you at the time of building. </br> 
 
 Credits
 -------
@@ -84,4 +76,4 @@ Thanks & regards,
 -----------------
 
 #TeamEthereal
-Join Us on telegram [ETHEREAL-OS](https://www.t.me/ETHEREAL_OS)
+
