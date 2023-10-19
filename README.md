@@ -55,11 +55,11 @@ Finally to build:
 
  # Inherit some common EthrealOS stuff.
 
-for all the EthrealOS Stuff:  $(call inherit-product, vendor/ethreal/config/common_full_phone.mk)
+for all the EthrealOS Stuff:  $(call inherit-product, vendor/ethereal/config/common_full_phone.mk)
 
 for maintainer:  ETHEREAL_BUILD_MAINTAINER := IamCOD3X
 
-for Gapps Build: WITH_GAPPS := true
+for Gapps Build: WITH_GAPPS := true [For Gapps] / false [For Vanilla]
  
 and use the following to build:
 
@@ -75,10 +75,8 @@ If you got some commits missing in our sources for your device, let us know on o
 
 Credits
 -------
-* [**ArrowOS Project**](https://github.com/ArrowOS)
 * [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
-* [**Project-Xtended**](https://github.com/Project-Xtended/)
-* [**Project-Colt**](https://github.com/Colt-Enigma/)
+* [**VoidUI**](https://github.com/VoidUI-Tiramisu/)
 * [**Thanks to all the custom rom community**]
 
 
@@ -86,3 +84,4 @@ Thanks & regards,
 -----------------
 
 #TeamEthereal
+Join Us on telegram [ETHEREAL-OS](https://www.t.me/ETHEREAL_OS)
