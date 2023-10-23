@@ -51,6 +51,7 @@
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ethereal" />
   <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="pixel-plus" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
   
   
   <!-- Official Devices - OTA Script Generation -->
