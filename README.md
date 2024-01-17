@@ -27,7 +27,7 @@ To initialize your local repository using the EthrealOS trees, use a
 command like this:
 
 ```bash
-  repo init -u https://github.com/Ethereal-OS/Manifest -b A13
+  repo init -u https://github.com/Ethereal-OS/Manifest -b A13 --git-lfs
 ```
   
 Then to sync up:
@@ -48,7 +48,7 @@ Finally to build:
 
 for all the EthrealOS Stuff:  $(call inherit-product, vendor/ethereal/config/common_full_phone.mk)
 
-for maintainer:  ETHEREAL_BUILD_MAINTAINER := IamCOD3X
+for maintainer:  ETHEREAL_MAINTAINER := IamCOD3X
 
 for Gapps Build: WITH_GAPPS := true [For Gapps] / false [For Vanilla]
  
@@ -69,6 +69,7 @@ Credits
 -------
 * [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
 * [**VoidUI**](https://github.com/VoidUI-Tiramisu/)
+* [**VoltageOS**](https://github.com/VoltageOS)
 * [**Thanks to all the custom rom community**]
 
 
