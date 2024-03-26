@@ -92,6 +92,7 @@
     <project path="packages/apps/Etar" name="packages_apps_Etar" remote="ethereal" />
     <project path="packages/apps/Stk" name="packages_apps_Stk" remote="ethereal" />
     <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="ethereal" />
+    <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="ethereal" />
     <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="ethereal" />
     <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ethereal" />
     <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ethereal" />
