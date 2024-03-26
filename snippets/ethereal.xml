@@ -136,6 +136,9 @@
     <project path="system/security" name="system_security" remote="ethereal" />
     <project path="system/media" name="system_media" remote="ethereal" />
     <project path="system/logging" name="system_logging" remote="ethereal" />
+    
+    <!-- Tools -->
+    <project path="tools/apksig" name="tools_apksig" remote="ethereal" />
 
     <!-- Vendor -->
     <project path="vendor/ethereal" name="vendor_ethereal" remote="ethereal" />
