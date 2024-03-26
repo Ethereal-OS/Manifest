@@ -50,7 +50,8 @@ for all the EthrealOS Stuff:  $(call inherit-product, vendor/ethereal/config/com
 
 for maintainer:  ETHEREAL_MAINTAINER := IamCOD3X
 
-for Gapps Build: WITH_GAPPS := true [For Gapps] / false [For Vanilla]
+for Official:  ETHEREAL_BUILD_TYPE := OFFICIAL
+(Note : It will not work untill we add that device in our git.)
  
 and use the following to build:
 
