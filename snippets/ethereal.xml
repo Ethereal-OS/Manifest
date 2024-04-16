@@ -35,6 +35,7 @@
     <project path="art" name="art" remote="ethereal" />
     <project path="libcore" name="libcore" remote="ethereal" />
     <project path="bootable/recovery" name="bootable_recovery" remote="ethereal" />
+    <project path="cts" name="android_cts" remote="ethereal" />
 
     <!-- Device -->
     <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ethereal" />
