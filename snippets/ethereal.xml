@@ -129,6 +129,7 @@
     <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ethereal" />
     <project path="external/gptfdisk" name="external_gptfdisk" remote="ethereal" />
     <project path="external/pdfium" name="external_pdfium" remote="ethereal" />
+    <project path="external/sonivox" name="external_sonivox" remote="ethereal" />
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="ethereal" />
