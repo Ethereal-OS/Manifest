@@ -8,11 +8,7 @@
            
     <remote name="ethereal-devices"
           fetch="https://github.com/Ethereal-OS/Ethereal-Devices"
-          revision="A14" />
-
-  <remote name="ethereal-devices"
-          fetch="https://github.com/Ethereal-Devices"
-          revision="A14" />         
+          revision="A14" />       
 
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
@@ -143,6 +139,6 @@
     <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="ethereal" />
 
     <!-- Official Devices - OTA Script Generation -->
-    <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal" />
+    <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal-devices" />
 </manifest>
 
