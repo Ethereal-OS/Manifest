@@ -118,6 +118,7 @@
   <remove-project name="platform/packages/modules/StatsD"/>
   <remove-project name="platform/packages/modules/NetworkStack"/>
   <remove-project name="platform/packages/modules/NeuralNetworks"/>
+  <remove-project name="platform/packages/modules/IntentResolver"/>
   <remove-project name="platform/packages/providers/DownloadProvider"/>
   <remove-project name="platform/packages/providers/MediaProvider"/>
   <remove-project name="platform/packages/providers/ContactsProvider"/>
