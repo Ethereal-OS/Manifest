@@ -93,9 +93,9 @@
     <!-- Device repos -->
     <project path="device/ethereal/sepolicy" name="device_ethereal_sepolicy" remote="ethereal" />
     <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ethereal" />
-    <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="14-sm8450" />
-    <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="14-sm8550" />
-    <project path="device/qcom/sepolicy_vndr/sm6225" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="14-sm6225" />
+    <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A14-sm8450" />
+    <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A14-sm8550" />
+    <project path="device/qcom/sepolicy_vndr/sm6225" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A14-sm6225" />
     <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ethereal" />
     <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="ethereal" />
     <project path="device/samsung_slsi/sepolicy" name="device_samsung_slsi_sepolicy" remote="ethereal" />
@@ -139,6 +139,6 @@
     <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="ethereal" />
 
     <!-- Official Devices - OTA Script Generation -->
-    <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal-devices" />
+    <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal" />
 </manifest>
 
