@@ -138,7 +138,6 @@
     <project path="vendor/bcr" name="vendor_bcr" remote="ethereal" />
     <project path="vendor/certification" name="vendor_certification" remote="ethereal" />
     <project path="vendor/ethereal" name="vendor_ethereal" remote="ethereal"/>
-    <project path="vendor/gms" name="android_vendor_gms" remote="ethereal" clone-depth="1" revision="qpr3" />
     <project path="vendor/SystemUIClocks" name="vendor_SystemUIClocks" remote="ethereal" />
     <project path="vendor/qcom/opensource/commonsys/fm" name="vendor_qcom_opensource_fm-commonsys" remote="ethereal" />
     <project path="vendor/qcom/opensource/core-utils-vendor" name="vendor_qcom_opensource_core-utils-vendor" remote="ethereal"/>
