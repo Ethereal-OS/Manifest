@@ -116,7 +116,7 @@
     <project path="hardware/qcom-caf/sm6225/dataipa" name="vendor_qcom_opensource_dataipa" remote="ethereal" revision="A14-sm6225" />
     <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" remote="ethereal" revision="A14-sm6225" />
     <project path="hardware/qcom-caf/sm6225/media" name="hardware_qcom_media" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom_display" groups="qcom" remote="ethereal" revision="A14-sm8350" />       
+    <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom_display" remote="ethereal" revision="A14-sm8350" />       
 
     <!-- Kernel -->
     <project path="kernel/configs" name="kernel_configs" remote="ethereal" />
