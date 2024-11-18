@@ -131,6 +131,7 @@
     <project path="external/gptfdisk" name="external_gptfdisk" remote="ethereal" />
     <project path="external/pdfium" name="external_pdfium" remote="ethereal" />
     <project path="external/sonivox" name="external_sonivox" remote="ethereal" />
+    <project path="external/skia" name="external_skia" remote="ethereal" />
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="ethereal" />
