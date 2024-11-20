@@ -2,156 +2,208 @@
 <manifest>
 
   <remote  name="ethereal"
-           sync-j="8"
-           fetch="https://github.com/Ethereal-OS"
-	      revision="A14" />
+		 revision="A14" 
+           fetch="https://github.com/Ethereal-OS" />
            
-    <remote name="ethereal-devices"
-          fetch="https://github.com/Ethereal-OS/Ethereal-Devices"
-          revision="A14" />       
+  <remote name="ethereal-devices"
+           revision="A14"
+          fetch="https://github.com/Ethereal-Devices" />
 
   <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
+           revision="14-qpr3"
+           fetch="https://gitlab.com/etherealos" />
 
+  <remote  name="bitbucket"
+           revision="14"
+           fetch="https://bitbucket.org/shuttercat" />
 
-    <!-- external repos -->
-    <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
-    <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
-    <project path="external/piex" name="external_piex" remote="ethereal" />
-    <project path="external/gptfdisk" name="external_gptfdisk" remote="ethereal" />
-    <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="ethereal" />
-    <project path="external/cronet" name="external_cronet" remote="ethereal" />
-    <project path="external/libcxx" name="external_libcxx" remote="ethereal" />
-    <project path="external/dtc" name="external_dtc" remote="ethereal" />
-    <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ethereal" />
-    <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="ethereal" />
+  <!-- Build -->
+  <project path="build/make" name="build" remote="ethereal" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="ethereal" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
-    <!-- Framework repos -->
-    <project path="frameworks/av" name="frameworks_av" remote="ethereal" />
-    <project path="frameworks/base" name="frameworks_base" remote="ethereal" />
-    <project path="frameworks/native" name="frameworks_native" remote="ethereal" />
-    <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ethereal" />
-    <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ethereal" />
-    <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" remote="ethereal" />
-    <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="ethereal" />
-    <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" remote="ethereal" />
+  <project path="art" name="art" remote="ethereal" />
+  <project path="bionic" name="bionic" remote="ethereal" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="ethereal" />
+  <project path="libcore" name="libcore" remote="ethereal" />
 
-    <!-- General repos -->
-    <project path="build/make" name="build" remote="ethereal">
-        <copyfile src="core/root.mk" dest="Makefile" />
-        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-        <linkfile src="core" dest="build/core" />
-        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-        <linkfile src="target" dest="build/target" />
-        <linkfile src="tools" dest="build/tools" />
-    </project>
-    <project path="build/soong" name="build_soong" remote="ethereal" >
-        <linkfile src="root.bp" dest="Android.bp" />
-        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-    </project>
-    <project path="art" name="art" groups="pdk" remote="ethereal" />
-    <project path="bionic" name="bionic" groups="pdk" remote="ethereal" />
-    <project path="bootable/recovery" name="bootable_recovery" remote="ethereal" />
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ethereal" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ethereal" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr_legacy-um" remote="ethereal" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr_sm8450" remote="ethereal" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr_sm8550" remote="ethereal" />
+  <project path="device/ethereal/sepolicy" name="device_ethereal_sepolicy" remote="ethereal" />
 
-    <!-- Packages repos -->
-    <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ethereal" />
-    <project path="packages/apps/Geometrics" name="packages_apps_Geometrics" remote="ethereal" />
-    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ethereal" />
-    <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
-    <project path="packages/modules/adb" name="packages_modules_adb" remote="ethereal"/>
-    <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ethereal"/>
-    <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="ethereal" />
-    <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ethereal" />
-    <project path="packages/modules/common" name="packages_modules_common" remote="ethereal" />
-    <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ethereal" />
-    <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ethereal" />
-    <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="ethereal" />
-    <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ethereal" />
-    <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="ethereal" />
-    <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ethereal" />
-    <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="ethereal" />
-    <project path="packages/apps/Recorder" name="packages_apps_Recorder" remote="ethereal" />
-    <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="ethereal" />
-    <project path="packages/apps/Glimpse" name="packages_apps_Glimpse" remote="ethereal" />
-    <project path="packages/apps/Etar" name="packages_apps_Etar" remote="ethereal" />
-    <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="ethereal" />
-    <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="ethereal" />
-    <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="ethereal" />
-    <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ethereal" />
-    <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="ethereal" />
-    <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="ethereal" />
-    <project path="packages/apps/etherealOSWallpaperStub" name="packages_apps_etherealOSWallpaperStub" remote="ethereal" />
-    <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="ethereal" />
-    <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="ethereal" />
-    <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ethereal" />
-    <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="ethereal" />
-    <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="ethereal" />
-    <project path="packages/apps/SimpleSettingsConfig" name="packages_apps_SimpleSettingsConfig" remote="ethereal" />
-    <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="ethereal" />
-    <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="ethereal" />
-    <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="ethereal" />
-    <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="ethereal" />
+  <!-- External -->
+  <project path="external/ant-wireless/ant_client" name="external_ant-wireless_ant_client" remote="ethereal" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="ethereal" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="ethereal" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="ethereal" />
+  <project path="external/dtc" name="external_dtc" remote="ethereal" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ethereal" />
+  <project path="external/exfatprogs" name="external_exfatprogs" remote="ethereal" />
+  <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="ethereal" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="ethereal" />
+  <project path="external/json-c" name="external_json-c" remote="ethereal" />
+  <project path="external/libcxx" name="external_libcxx" remote="ethereal" />
+  <project path="external/libnl" name="external_libnl" remote="ethereal" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r48" />
+  <project path="external/ntfs-3g" name="external_ntfs-3g" remote="ethereal" />
+  <project path="external/mksh" name="external_mksh" remote="ethereal" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="ethereal" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="ethereal" />
+  <project path="external/seedvault" name="external_seedvault" remote="ethereal" />
+  <project path="external/setupcompat" name="external_setupcompat" remote="ethereal" />
+  <project path="external/tigervnc" name="external_tigervnc" groups="pdk" remote="ethereal" />
 
-    <!-- Device repos -->
-    <project path="device/ethereal/sepolicy" name="device_ethereal_sepolicy" remote="ethereal" />
-    <project path="device/sample" name="device_sample" remote="ethereal" />
-    <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ethereal" />
-    <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A14-sm8450" />
-    <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A14-sm8550" />
-    <project path="device/qcom/sepolicy_vndr/sm6225" name="device_qcom_sepolicy_vndr" remote="ethereal" revision="A14-sm6225" />
-    <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ethereal" />
-    <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="ethereal" />
-    <project path="device/samsung_slsi/sepolicy" name="device_samsung_slsi_sepolicy" remote="ethereal" />
+  <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="ethereal" />
+  <project path="frameworks/base" name="frameworks_base" remote="ethereal" />
+  <project path="frameworks/libs/modules-utils" name="frameworks_libs_modules-utils" remote="ethereal" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ethereal" />
+  <project path="frameworks/native" name="frameworks_native" remote="ethereal" />
+  <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" remote="ethereal" />
+  <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" remote="ethereal" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ethereal" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="ethereal" />
 
-    <!-- Hardware repos -->
-    <project path="hardware/ethereal/interfaces" name="hardware_ethereal_interfaces" remote="ethereal" />
-    <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="ethereal"/>
-    <project path="hardware/libhardware" name="hardware_libhardware" remote="ethereal" />
-    <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="ethereal" />
-    <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="ethereal" />
-    <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="ethereal" />
-    <project path="hardware/interfaces" name="hardware_interfaces" remote="ethereal" />
-    <project path="hardware/motorola" name="hardware_motorola" remote="ethereal" />
-    <project path="hardware/qcom-caf/sm6225/audio/agm" name="vendor_qcom_opensource_agm" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm6225/audio/pal" name="vendor_qcom_opensource_arpal" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="hardware_qcom_audio-ar" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="ethereal" revision="14-sm6225" />
-    <project path="hardware/qcom-caf/sm6225/dataipa" name="vendor_qcom_opensource_dataipa" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm6225/media" name="hardware_qcom_media" remote="ethereal" revision="A14-sm6225" />
-    <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom_display" remote="ethereal" revision="A14-sm8350" />       
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="ethereal" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="ethereal" />
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="ethereal" />
+  <project path="hardware/lineage/interfaces" name="hardware_ethereal_interfaces" remote="ethereal" />
+  <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="ethereal" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="ethereal" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="ethereal" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="ethereal" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom_audio" revision="14-msm8998" remote="ethereal" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom_display" revision="14-msm8998" remote="ethereal" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom_media" revision="14-msm8998" remote="ethereal" />
 
-    <!-- Kernel -->
-    <project path="kernel/configs" name="kernel_configs" remote="ethereal" />
+  <!-- Hardware Pixel -->
+  <project path="hardware/google/gchips" name="hardware_google_gchips" remote="ethereal" />
+  <project path="hardware/google/graphics/common" name="hardware_google_graphics_common" remote="ethereal" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="ethereal" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="ethereal" />
 
-    <!-- Prebuilts -->
-    <project path="prebuilts/custom-sdk" name="prebuilts_custom-sdk" remote="ethereal"  />
+  <!-- Inline kernel build -->
+  <project path="kernel/configs" name="kernel_configs" remote="ethereal" />
+  <project path="prebuilts/clang/host/linux-x86/trb_clang" name="clang" remote="bitbucket" />
 
-    <!-- System repos -->
-    <project path="system/bpf" name="system_bpf" remote="ethereal" />
-    <project path="system/core" name="system_core" remote="ethereal" />
-    <project path="system/media" name="system_media" remote="ethereal" />
-    <project path="system/sepolicy" name="system_sepolicy" remote="ethereal" />
-    <project path="system/libhidl" name="system_libhidl" remote="ethereal" />
-    <project path="system/qcom" name="system_qcom" remote="ethereal" />
-    <project path="system/logging" name="system_logging" remote="ethereal" />
-    <project path="system/update_engine" name="system_update_engine" remote="ethereal"  />
+  <!-- Packages -->
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ethereal" />
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="ethereal" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="ethereal" />
+  <project path="packages/apps/Covers" name="packages_apps_Covers" remote="ethereal" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="ethereal" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="ethereal" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="ethereal" />
+  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="ethereal" />
+  <project path="packages/apps/LogViewer" name="packages_apps_LogViewer" remote="ethereal" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="ethereal" />
+  <project path="packages/apps/Glimpse" name="packages_apps_Glimpse" remote="ethereal" />
+  <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="ethereal" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="ethereal" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ethereal" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="ethereal" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ethereal" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab" />
+  <project path="packages/apps/Powerhub" name="packages_apps_Powerhub" remote="ethereal" />
+  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="ethereal" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ethereal" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ethereal" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="ethereal" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="ethereal" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ethereal" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="ethereal" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ethereal" />
+  <project path="packages/apps/DesktopMode" name="packages_apps_DesktopMode" remote="ethereal" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="ethereal" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ethereal" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="ethereal" />
+  <project path="packages/modules/ConfigInfrastructure" name="packages_modules_ConfigInfrastructure" remote="ethereal" />
+  <project path="packages/modules/Connectivity" name="packages_modules_connectivity" remote="gitlab" />
+  <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="ethereal" />
+  <project path="packages/modules/HealthFitness" name="packages_modules_HealthFitness" remote="ethereal" />
+  <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="ethereal" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="ethereal" />
+  <project path="packages/modules/RemoteKeyProvisioning" name="packages_modules_RemoteKeyProvisioning" remote="ethereal" />  
+  <project path="packages/modules/Uwb" name="packages_modules_Uwb" remote="ethereal" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="ethereal" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="ethereal" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="ethereal" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ethereal" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ethereal" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="ethereal" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ethereal" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ethereal" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="gitlab" />
+  <project path="packages/services/VncFlinger" name="packages_services_VncFlinger" remote="ethereal" />
 
-    <!-- Vendor repos -->
-    <project path="vendor/bcr" name="vendor_bcr" remote="ethereal" />
-    <project path="vendor/certification" name="vendor_certification" remote="ethereal" />
-    <project path="vendor/ethereal" name="vendor_ethereal" remote="ethereal"/>
-    <project path="vendor/SystemUIClocks" name="vendor_SystemUIClocks" remote="ethereal" />
-    <project path="vendor/qcom/opensource/commonsys/fm" name="vendor_qcom_opensource_fm-commonsys" remote="ethereal" />
-    <project path="vendor/qcom/opensource/core-utils-vendor" name="vendor_qcom_opensource_core-utils-vendor" remote="ethereal"/>
-    <project path="vendor/support" name="vendor_support" remote="ethereal" />
-    <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="ethereal" />
-    <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="ethereal" />
-    <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="ethereal" />
-    <project path="vendor/prebuilds" name="vendor_prebuilds" remote="ethereal" />
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" clone-depth="1" remote="ethereal" />
+  <project path="prebuilts/calyx/datura" name="prebuilts_calyx_datura" remote="ethereal" />
 
-    <!-- Official Devices - OTA Script Generation -->
-    <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal" />
+  <!-- System -->
+  <project path="system/bpf" name="system_bpf" remote="ethereal" />
+  <project path="system/core" name="system_core" remote="ethereal" />
+  <project path="system/libhidl" name="system_libhidl" remote="ethereal" />
+  <project path="system/librustutils" name="system_librustutils" remote="ethereal" />
+  <project path="system/media" name="system_media" remote="ethereal" />
+  <project path="system/netd" name="system_netd" remote="ethereal" />
+  <project path="system/security" name="system_security" remote="ethereal" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="ethereal" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="ethereal" />
+  <project path="system/update_engine" name="system_update_engine" remote="ethereal" />
+  <project path="system/vold" name="system_vold" remote="ethereal" />
+
+  <!-- Tools -->
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="ethereal" />
+
+  <!-- Vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="gitlab" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="ethereal" />
+  <project path="vendor/ethereal" name="vendor_ethereal" remote="ethereal" />
+  <project path="vendor/ethereal-priv/keys" name="vendor_ethereal-priv_keys" remote="ethereal" />
+  <project path="vendor/lineage_compat" name="vendor_lineage_compat" remote="ethereal" />
+  <project path="vendor/SystemUIClocks" name="vendor_SystemUIClocks" remote="ethereal" />
+  <project path="vendor/ota" name="android_vendor_etherealota" remote="ethereal" />
+
 </manifest>
-
