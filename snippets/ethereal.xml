@@ -144,7 +144,7 @@
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="ethereal" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ethereal" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab" />
-  <project path="packages/apps/Powerhub" name="packages_apps_Powerhub" remote="ethereal" />
+  <project path="packages/apps/Etherealhub" name="packages_apps_Etherealhub" remote="ethereal" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="ethereal" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ethereal" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ethereal" />
