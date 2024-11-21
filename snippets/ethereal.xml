@@ -204,6 +204,6 @@
   <project path="vendor/ethereal-priv/keys" name="vendor_ethereal-priv_keys" remote="ethereal" />
   <project path="vendor/lineage_compat" name="vendor_lineage_compat" remote="ethereal" />
   <project path="vendor/SystemUIClocks" name="vendor_SystemUIClocks" remote="ethereal" />
-  <project path="vendor/ota" name="android_vendor_etherealota" remote="ethereal" />
+  <project path="vendor/officialdevices" name="Ethereal-Devices" remote="ethereal" />
 
 </manifest>
