@@ -55,9 +55,14 @@ for Official:  ETHEREAL_BUILD_TYPE := OFFICIAL
  
 and use the following to build:
 
-  . build/envsetup.sh
-  lunch ethreal_[device-codename]-ap2a-userdebug
-  make ethereal -j$
+. build/envsetup.sh
+lunch ethereal_[device-codename]-ap2a-userdebug
+make b -j$
+```
+OR
+```
+. build/envsetup.sh
+brunch {device-codename}
 ```
 
 Help from other devices for making them Official
