@@ -46,7 +46,7 @@ Finally to build:
 
  # Inherit some common EthrealOS stuff.
 
-for all the EthrealOS Stuff:  $(call inherit-product, vendor/ethereal/config/common_full_phone.mk)
+for all the EtherealOS Stuff:  $(call inherit-product, vendor/ethereal/config/common_full_phone.mk)
 
 for maintainer:  ETHEREAL_MAINTAINER := IamCOD3X
 
