@@ -31,6 +31,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="build/release" name="build_release" remote="ethereal" />
 
   <project path="art" name="art" remote="ethereal" />
   <project path="bionic" name="bionic" remote="ethereal" />
@@ -65,6 +66,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="ethereal" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="ethereal" />
   <project path="external/seedvault" name="external_seedvault" remote="ethereal" />
+  <project path="external/skia" name="external_skia" remote="ethereal" />
   <project path="external/setupcompat" name="external_setupcompat" remote="ethereal" />
   <project path="external/tigervnc" name="external_tigervnc" groups="pdk" remote="ethereal" />
 
@@ -162,6 +164,7 @@
   <project path="packages/modules/Connectivity" name="packages_modules_connectivity" remote="gitlab" />
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="ethereal" />
   <project path="packages/modules/HealthFitness" name="packages_modules_HealthFitness" remote="ethereal" />
+  <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" remote="ethereal" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="ethereal" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="ethereal" />
   <project path="packages/modules/RemoteKeyProvisioning" name="packages_modules_RemoteKeyProvisioning" remote="ethereal" />  
