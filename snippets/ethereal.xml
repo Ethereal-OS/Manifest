@@ -57,6 +57,7 @@
   <project path="external/exfatprogs" name="external_exfatprogs" remote="ethereal" />
   <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="ethereal" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="ethereal" />
+  <project path="external/giflib" name="external_giflib" remote="ethereal" />
   <project path="external/json-c" name="external_json-c" remote="ethereal" />
   <project path="external/libcxx" name="external_libcxx" remote="ethereal" />
   <project path="external/libnl" name="external_libnl" remote="ethereal" />
