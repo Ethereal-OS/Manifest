@@ -52,6 +52,7 @@
   <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="ethereal" />
   <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="ethereal" />
   <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="ethereal" />
+  <project path="external/dng_sdk" name="external_dng_sdk" groups="ethereal" />
   <project path="external/dtc" name="external_dtc" remote="ethereal" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ethereal" />
   <project path="external/exfatprogs" name="external_exfatprogs" remote="ethereal" />
