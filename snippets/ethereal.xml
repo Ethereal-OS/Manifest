@@ -168,6 +168,7 @@
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="ethereal" />
   <project path="packages/modules/HealthFitness" name="packages_modules_HealthFitness" remote="ethereal" />
   <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" remote="ethereal" />
+  <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="ethereal" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="ethereal" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="ethereal" />
   <project path="packages/modules/RemoteKeyProvisioning" name="packages_modules_RemoteKeyProvisioning" remote="ethereal" />  
