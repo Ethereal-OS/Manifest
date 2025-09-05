@@ -151,6 +151,7 @@
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="ethereal" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="gitlab" />
   <project path="packages/apps/Etherealhub" name="packages_apps_Etherealhub" remote="ethereal" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="ethereal" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="ethereal" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ethereal" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ethereal" />
