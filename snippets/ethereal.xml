@@ -36,6 +36,7 @@
   <project path="art" name="art" remote="ethereal" />
   <project path="bionic" name="bionic" remote="ethereal" />
   <project path="bootable/recovery" name="bootable_recovery" remote="ethereal" />
+  <project path="cts" name="platform/cts" remote="ethereal" />
   <project path="libcore" name="libcore" remote="ethereal" />
 
   <!-- Device -->
@@ -136,6 +137,7 @@
   <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="ethereal" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="ethereal" />
   <project path="packages/apps/Covers" name="packages_apps_Covers" remote="ethereal" />
+  <project path="packages/apps/CertInstaller" name="packages_apps_CertInstaller" remote="ethereal" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="ethereal" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="ethereal" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="ethereal" />
@@ -181,6 +183,7 @@
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ethereal" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="ethereal" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="ethereal" />
+  <project path="packages/services/Mms" name="packages_services_Mms" remote="ethereal" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ethereal" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ethereal" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="gitlab" />
