@@ -36,7 +36,7 @@
   <project path="art" name="art" remote="ethereal" />
   <project path="bionic" name="bionic" remote="ethereal" />
   <project path="bootable/recovery" name="bootable_recovery" remote="ethereal" />
-  <project path="cts" name="platform/cts" remote="ethereal" />
+  <project path="cts" name="cts" remote="gitlab" />
   <project path="libcore" name="libcore" remote="ethereal" />
 
   <!-- Device -->
@@ -57,6 +57,7 @@
   <project path="external/dtc" name="external_dtc" remote="ethereal" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ethereal" />
   <project path="external/exfatprogs" name="external_exfatprogs" remote="ethereal" />
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="ethereal" />
   <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="ethereal" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="ethereal" />
   <project path="external/giflib" name="external_giflib" remote="ethereal" />
