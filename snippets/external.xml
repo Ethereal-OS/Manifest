@@ -6,7 +6,7 @@
 
   <!-- Chromium Webview -->
   <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" groups="pdk" revision="main" remote="LineageOS" >
-    <linkfile src="os_pickup.mk" dest="external/chromium-webview/os_pickup.mk" />
+    <linkfile src="os_pickup.mk" dest="external/chromium-webview/Android.mk" />
     <linkfile src="CleanSpec.mk" dest="external/chromium-webview/CleanSpec.mk" />
     <linkfile src="README" dest="external/chromium-webview/README" />
   </project>
