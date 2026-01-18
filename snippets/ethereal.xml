@@ -74,6 +74,7 @@
     <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ethereal" />
     <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ethereal" />
     <project path="packages/apps/Covers" name="packages_apps_Covers" remote="ethereal" />
+    <project path="packages/apps/CertInstaller" name="packages_apps_CertInstaller" groups="ethereal" />    
     <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ethereal" />
     <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ethereal" />
     <project path="packages/apps/Etherealhub" name="packages_apps_Etherealhub" remote="ethereal" />
@@ -100,6 +101,7 @@
     <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ethereal" />
     <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ethereal" />
     <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="ethereal" />
+    <project path="packages/services/Mms" name="packages_services_Mms" groups="ethereal" />
     <project path="packages/modules/Permission" name="packages_modules_Permission" remote="ethereal" />
     <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ethereal" />
     <project path="packages/modules/common" name="packages_modules_common" remote="ethereal" />
@@ -135,6 +137,8 @@
     <project path="external/pdfium" name="external_pdfium" remote="ethereal" />
     <project path="external/sonivox" name="external_sonivox" remote="ethereal" />
     <project path="external/skia" name="external_skia" remote="ethereal" />
+    <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="ethereal" />
+    <project path="external/dng_sdk" name="external_dng_sdk" remote="ethereal" />
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="ethereal" />
